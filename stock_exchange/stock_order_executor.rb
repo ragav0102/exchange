@@ -10,7 +10,7 @@ class StockOrderExecutor
       next unless can_execute(old_order, new_order)
       buy_order, sell_order = find_buy_sell_orders(old_order, new_order)
       StockOrder.update_stock_orders(buy_order, sell_order)
-      break if new_order.closed?
+      break unless new_order.open?
     end
     @stock_orders << new_order
   end
