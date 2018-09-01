@@ -1,0 +1,6 @@
+StockId,Side,Company,Quantity
+1,0,'ABC',10
+2,1,'XYZ',15
+3,1,'ABC',13
+4,0,'XYZ',10
+5,0,'XYZ',8
